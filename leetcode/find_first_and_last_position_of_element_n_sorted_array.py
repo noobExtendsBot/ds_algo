@@ -11,7 +11,7 @@ class Solution:
             if only one [5,7,7,8,10], target = 8 => [3,3]
 
             METHOD 1: linear search
-            METHOD 2:
+            METHOD 2: Binary Search
         """
 
         # Brute force (a bad question maybe? accepts it)
@@ -30,5 +30,31 @@ class Solution:
         # return res
         """ Brute Force end """
         """ Binary Search Method start """
+        # time complexity log(n)
+        res = [-1, -1]
+        # first get the first location (left bound)
+        start, end = 0, len(nums)-1
+        while start <= end:
+            mid = (start+end)//2
+            if nums[mid] == target:
+                res[0] = mid
+                end = mid - 1
+            elif nums[mid] > target:
+                end = mid - 1
+            elif nums[mid] < target:
+                start = mid + 1
+                
+        start, end = 0, len(nums)-1
+        # get the last location (right bound)
+        while start <= end:
+            mid = (start+end)//2
+            if nums[mid] == target:
+                res[1] = mid
+                start = mid + 1
+            elif nums[mid] > target:
+                end = mid - 1
+            elif nums[mid] < target:
+                start = mid + 1
+        
+        return res
         """ Binary Search Method end """
-        pass
