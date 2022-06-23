@@ -13,27 +13,42 @@ class Node:
         self.next = None
 
 
-class UnorderedList:
+class LinkedList:
     """
-    An unordered list, most easy operation append at head
+    Order is important, either increasing or decreasing
+    Assumption: Sorted in increasing order
     """
 
     def __init__(self):
-        # a pointer to first Node
         self.head = None
 
     def add(self, data):
-        # Add new item to head time complexity O(1)
-        new_node = Node(data=data)
-        if self.head is None:
-            self.head = new_node
+        current = self.head
+        previous = None
+        found = False
+        while current is not None and not found:
+            if current.data > data:
+                found = True
+            else:
+                previous = current
+                current = current.next
+
+        new_node = Node(data)
+        if previous is not None:
+            previous.next = new_node
+            new_node.next = current
         else:
-            # next node saves the previous node
-            # that will be next_node for new node
-            next_node = self.head
+            new_node.next = self.head
             self.head = new_node
-            new_node.next = next_node
-        return True
+
+    def search(self, data):
+        current = self.head
+        while current is not None:
+            if current.data == data:
+                return True  # item found
+            elif current.data > data:
+                return False  # item not in the list
+            current = current.next
 
     def display(self):
         # display all elements of the LinkedList O(n)
@@ -44,40 +59,19 @@ class UnorderedList:
         print("\n")
         return
 
-    def remove(self, data):
-        # Assumption element exists in the LinkedList
-        # remove a particular element from the LinkedList O(n)
-        current = self.head
-        previous = None
-        found = False
-        while current is not None and found is False:
-            if current.data == data:
-                found = True
-            else:
-                previous = current
-                current = current.next
-        if previous is None:
-            # first element
-            self.head = current.next
-        else:
-            previous.next = current.next
-        del current
-        return True
-
 
 if __name__ == "__main__":
-    llist = UnorderedList()
-    llist.add(5)
+    llist = LinkedList()
+    llist.add(2)
+    llist.add(10)
+    llist.add(1)
     llist.display()
-    llist.add(25)
-    llist.add(15)
-    llist.add(50)
-    llist.add(11)
-    llist.add(55)
-    llist.display()
-    llist.remove(55)
-    llist.display()
-    llist.remove(5)
-    llist.display()
-    llist.remove(15)
+    if llist.search(1):
+        print("element found")
+    if llist.search(10):
+        print("element found")
+    if llist.search(0):
+        print("element found")
+    else:
+        print("element not found")
     llist.display()
