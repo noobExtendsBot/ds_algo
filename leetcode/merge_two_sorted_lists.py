@@ -31,6 +31,9 @@ class LinkedList:
 
 
 class Solution:
+    """
+    Time Complexity: O(m+n)
+    """
     def mergeTwoLists(
             self,
             list1: Optional[ListNode],

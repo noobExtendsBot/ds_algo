@@ -1,3 +1,6 @@
 # ENV
-env/
-ENV/
+env
+ENV
+
+# cache
+__pycache__
