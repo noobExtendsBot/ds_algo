@@ -27,8 +27,9 @@ class Solution:
 
         if len(slist) != 0:
             balanced = False
-            
+
         return balanced
+
 
 if __name__ == "__main__":
     sol = Solution()
@@ -37,5 +38,3 @@ if __name__ == "__main__":
     print(sol.isValid('[{()]'))
     print(sol.isValid('[{('))
     print(sol.isValid('}]'))
-            
-            

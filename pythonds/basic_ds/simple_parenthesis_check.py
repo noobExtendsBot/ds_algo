@@ -1,5 +1,6 @@
 from Stack import Stack
 
+
 def check_parenthesis(symbols):
     my_list = Stack()
     balanced = True
@@ -16,6 +17,7 @@ def check_parenthesis(symbols):
         return True
     else:
         return False
+
 
 if __name__ == "__main__":
     print(check_parenthesis('((()))'))
