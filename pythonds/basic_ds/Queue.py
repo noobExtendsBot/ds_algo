@@ -15,13 +15,16 @@ class Queue:
         self.queue.insert(0, item)
 
     def dequeue(self):
-        self.queue.pop()
+        return self.queue.pop()
 
     def is_empty(self):
         return len(self.queue) == 0
 
     def size(self):
         return len(self.queue)
+
+    def peek(self):
+        return self.queue[:-1]
 
     def display(self):
         return [item for item in self.queue][::-1]
