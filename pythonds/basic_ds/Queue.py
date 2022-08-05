@@ -24,7 +24,7 @@ class Queue:
         return len(self.queue)
 
     def peek(self):
-        return self.queue[:-1]
+        return self.queue[-1]
 
     def display(self):
         return [item for item in self.queue][::-1]

@@ -57,7 +57,6 @@ class LinkedList:
             print(current.data, end=" ")
             current = current.next
         print("\n")
-        return
 
 
 if __name__ == "__main__":

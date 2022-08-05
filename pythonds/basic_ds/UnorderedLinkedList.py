@@ -33,7 +33,6 @@ class UnorderedList:
             next_node = self.head
             self.head = new_node
             new_node.next = next_node
-        return True
 
     def display(self):
         # display all elements of the LinkedList O(n)
@@ -42,7 +41,6 @@ class UnorderedList:
             print(current.data, end=" ")
             current = current.next
         print("\n")
-        return
 
     def remove(self, data):
         # Assumption element exists in the LinkedList
@@ -62,7 +60,6 @@ class UnorderedList:
         else:
             previous.next = current.next
         del current
-        return True
 
 
 if __name__ == "__main__":
