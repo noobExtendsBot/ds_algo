@@ -20,3 +20,18 @@ class Solution:
             current = next_node
 
         return previous
+
+    def reverseListUsingRecursion(
+            self, head: Optional[ListNode]) -> Optional[ListNode]:
+        node = head
+        if node is None:
+            return node
+
+        if node.next is None:
+            return node
+
+        node1 = self.reverseList(node.next)
+        previous = node.next
+        previous.next = node
+        node.next = None
+        return node1
