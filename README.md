@@ -16,6 +16,7 @@
 | [34. Find First and Last Position of Element in Sorted Array](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/34_find_first_and_last_position_of_element_n_sorted_array.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Binary Search | |
 | [189. Rotate Array](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/189_rotate_array.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Arrays | |
 | [238. Product of Array Except Self](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/238_product_of_array_except_self.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Arrays | |
+| [227. Basic Calculator II](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/227_basic_calculator_2.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Stacks | |
 
 
 
