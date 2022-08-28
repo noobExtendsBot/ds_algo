@@ -11,6 +11,11 @@ class MySolution:
         '/': 2,
     }
 
+    def has_greater_precedence(self, op1, op2):
+        if self.precedence_mapper[op1] >= self.precedence_mapper[op2]:
+            return True
+        return False
+
     def infix_to_postfix(self, s: str) -> str:
         sList = [i for i in s.replace(" ", "")]
         output = []
@@ -20,22 +25,13 @@ class MySolution:
             if i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
                 output.append(i)
             else:
-                try:
-                    last_operator = operator_stack.pop()
-                    # if precedence of operator in stack is equal to or greater than current
-                    # then push it to output stack
-                    if self.precedence_mapper[i] > self.precedence_mapper[last_operator]:
-                        operator_stack.append(last_operator)
-                        operator_stack.append(i)
-                    else:
-                        output.append(last_operator)
-                        operator_stack.append(i)
-                except IndexError:
-                    operator_stack.append(i)
+                while len(operator_stack) > 0 and self.has_greater_precedence(
+                        operator_stack[-1], i):
+                    output.append(operator_stack.pop())
+                operator_stack.append(i)
 
-        if len(operator_stack) != 0:
-            while len(operator_stack) > 0:
-                output.append(operator_stack.pop())
+        while len(operator_stack) > 0:
+            output.append(operator_stack.pop())
 
         return ''.join(output)
         # print(''.join(output))

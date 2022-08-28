@@ -47,16 +47,11 @@ class Solution:
             if i in "+-/*":
                 # add a space to mark end of item
                 output_stack.append(" ")
-                try:
-                    while len(operator_stack) > 0 and self.check_precedence(
-                            operator_stack[-1], i):
-                        output_stack.append(operator_stack.pop())
-                        output_stack.append(" ")
-                    operator_stack.append(i)
-
-                except IndexError:
-                    operator_stack.append(i)
-
+                while len(operator_stack) > 0 and self.check_precedence(
+                        operator_stack[-1], i):
+                    output_stack.append(operator_stack.pop())
+                    output_stack.append(" ")
+                operator_stack.append(i)
             else:
                 output_stack.append(i)
 
