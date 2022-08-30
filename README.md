@@ -22,5 +22,4 @@
 | [347. Top K Frequent Elements](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/347_top_k_frequent_elements.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Hash Table | |
 
 
-347_top_k_frequent_elements
 # [Pythonds](https://runestone.academy/ns/books/published/pythonds/index.html)
