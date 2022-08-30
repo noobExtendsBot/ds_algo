@@ -10,7 +10,8 @@
 |[20. Valid Parentheses](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/20_valid_parentheses.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Stack | |
 |[232. Implement Queue using Stacks](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/232_implement_queue_using_stacks.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Queues and Stacks | |
 |[704. Binary Search](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/704_binary_search.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Binary Search | |
-|[242. Valid Anagram](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/242_valid_anagram.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Hashmap | |
+|[242. Valid Anagram](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/242_valid_anagram.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Hash Table | |
+|[217. Contains Duplicate](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/217_contains_duplicate.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Hash Table | |
 |[150. Evaluate Reverse Polish Notation](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/150_evaluate_reverse_polish_notation.py)| ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
 | [155. Min Stack](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/155_min_stack.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
 | [19. Remove Nth Node From End of List](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/19_remove_nth_node_from_end_of_list.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Linked List |
