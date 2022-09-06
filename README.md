@@ -11,6 +11,7 @@
 |[232. Implement Queue using Stacks](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/232_implement_queue_using_stacks.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Queues and Stacks | |
 |[704. Binary Search](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/704_binary_search.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Binary Search | |
 |[242. Valid Anagram](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/242_valid_anagram.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Hash Table | |
+|[1. Two Sum](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/1_two_sum.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Hash Table | |
 |[217. Contains Duplicate](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/217_contains_duplicate.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Hash Table | |
 |[150. Evaluate Reverse Polish Notation](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/150_evaluate_reverse_polish_notation.py)| ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
 | [155. Min Stack](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/155_min_stack.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
