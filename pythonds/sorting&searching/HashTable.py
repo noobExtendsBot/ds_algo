@@ -53,6 +53,13 @@ class HashTable:
     def __setitem__(self, key, val):
         return self.put(key, val)
 
+    def __contains__(self, key):
+        try:
+            if self.slots[key] is not None:
+                return True
+        except IndexError:
+            return False
+
     def display(self):
         print(self.slots)
         print(self.data)
@@ -70,3 +77,8 @@ if __name__ == "__main__":
     hash_map.display()
     print(hash_map[10])
     print(hash_map[1])
+    if 0 in hash_map:
+        print("Found it!!")
+
+    if 123 not in hash_map:
+        print("Not found")
