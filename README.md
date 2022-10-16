@@ -14,7 +14,7 @@
 |[1. Two Sum](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/1_two_sum.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Hash Table | |
 |[217. Contains Duplicate](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/217_contains_duplicate.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Hash Table | |
 |[141. Linked List Cycle](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/141_linked_list_cycle.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Linked List | Two Pointers |
-|[58. Length of Last Word](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/58_length_of_last_word.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Linked List | Two Pointers |
+|[58. Length of Last Word](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/58_length_of_last_word.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Arrays | |
 |[150. Evaluate Reverse Polish Notation](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/150_evaluate_reverse_polish_notation.py)| ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
 | [155. Min Stack](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/155_min_stack.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
 | [19. Remove Nth Node From End of List](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/19_remove_nth_node_from_end_of_list.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Linked List | Two Pointers|
