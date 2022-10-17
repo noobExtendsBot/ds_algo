@@ -62,7 +62,7 @@ class BinarySearchTree:
         self.size += 1
 
     def _put(self, key, val, current_node):
-        if key < current_node.key:
+        if key < current_node.key: 
             if current_node.has_left_child():
                 self._put(key, val, current_node.left)
             else:
@@ -75,7 +75,7 @@ class BinarySearchTree:
     
     def __setitem__(self, k, v):
         self.put(k, v)
-    
+     
     def get(self, key):
         if self.root.key == key:
             return self.root.val
@@ -128,10 +128,20 @@ class BinarySearchTree:
         elif current_node.has_both_children():
             pass
         else: # only one chlid
-            if current_node.is_left_child():
-                pass
+            if current_node.has_left_child():
+                if current_node.is_left_child():
+                    current_node.left.parent = current_node.parent
+                    current_node.parent.left = current_node.left
+                elif current_node.is_right_child():
+                    current_node.left.parent = current_node.parent
+                    current_node.parent.right = current_node.left
             else: # right child
-                pass
+                if current_node.is_left_child():
+                    current_node.right.parent = current_node.parent
+                    current_node.parent.left = current_node.right
+                elif current_node.is_right_child():
+                    current_node.right.parent = current_node.parent
+                    current_node.parent.right = current_node.right
         
 
     def __delitem__(self, key):
@@ -143,6 +153,6 @@ if __name__ == "__main__":
     bst.put(20, 2)
     bst.put(7, 0)
 
-    print(bst.get(7))
     print(bst.get(15))
-    print(bst.get(220))
+    # print(bst.get(15))
+    # print(bst.get(220))
