@@ -16,9 +16,10 @@ class TreeNode:
 
     def is_left_child(self):
         return self.parent and self.parent.left == self
-    
+
     def is_right_child(self):
         return self.parent and self.parent.right == self
+
 
 class BinarySearchTree:
     def __init__(self):
@@ -43,9 +44,10 @@ class BinarySearchTree:
                 self._put(key, c_node.right)
             else:
                 c_node.right = TreeNode(key, parent=c_node)
-    
+
     def get(self, key):
-        if key == self.root.key: return key
+        if key == self.root.key:
+            return key
         else:
             res = self._get(key, self.root)
             if res:
@@ -64,21 +66,21 @@ class BinarySearchTree:
             return self._get(key, c_node.right)
 
     def find_max(self, c_node):
-        if c_node == None:
+        if c_node is None:
             return None
         elif c_node.has_right_child():
             return self.find_max(c_node.right)
         else:
             return c_node.key
-    
+
     def find_min(self, c_node):
-        if c_node == None:
+        if c_node is None:
             return None
         elif c_node.has_left_child():
             return self.find_min(c_node.left)
         else:
             return c_node.key
-    
+
     def find_height(self, c_node):
         l_height = r_height = 0
         if c_node.is_leaf():
@@ -88,7 +90,6 @@ class BinarySearchTree:
         if c_node.has_right_child():
             r_height = self.find_height(c_node.right)
         return max(l_height, r_height) + 1
-        
 
 
 if __name__ == "__main__":
