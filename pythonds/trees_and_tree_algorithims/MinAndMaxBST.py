@@ -82,13 +82,10 @@ class BinarySearchTree:
             return c_node.key
 
     def find_height(self, c_node):
-        l_height = r_height = 0
-        if c_node.is_leaf():
-            return 0
-        if c_node.has_left_child():
-            l_height = self.find_height(c_node.left)
-        if c_node.has_right_child():
-            r_height = self.find_height(c_node.right)
+        if c_node is None:
+            return -1
+        l_height = self.find_height(c_node.left)
+        r_height = self.find_height(c_node.right)
         return max(l_height, r_height) + 1
 
 
@@ -98,13 +95,13 @@ if __name__ == "__main__":
     bst.put(20)
     bst.put(1)
     bst.put(2)
-    bst.put(3)
-    bst.put(4)
-    bst.put(5)
-    bst.put(6)
-    bst.put(7)
-    bst.put(9)
-    bst.put(8)
+    # bst.put(3)
+    # bst.put(4)
+    # bst.put(5)
+    # bst.put(6)
+    # bst.put(7)
+    # bst.put(9)
+    # bst.put(8)
     l_max = bst.find_max(bst.root)
     print(l_max)
     l_min = bst.find_min(bst.root)
