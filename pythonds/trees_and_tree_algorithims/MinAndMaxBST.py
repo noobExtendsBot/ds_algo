@@ -1,3 +1,17 @@
+class Queue:
+    def __init__(self):
+        self.queue = list()
+    
+    def enqueue(self, data):
+        self.queue.insert(0, data)
+    
+    def dequeue(self):
+        return self.queue.pop()
+    
+    def is_empty(self):
+        return len(self.queue) == 0
+    
+
 class TreeNode:
     def __init__(self, key, left=None, right=None, parent=None):
         self.key = key
@@ -87,6 +101,22 @@ class BinarySearchTree:
         l_height = self.find_height(c_node.left)
         r_height = self.find_height(c_node.right)
         return max(l_height, r_height) + 1
+    
+    def level_order_traversal(self):
+        if self.root is None:
+            return None
+        queue = Queue()
+        res = list()
+        queue.enqueue(self.root)
+        res.append([self.root.key])
+        while not queue.is_empty():
+            c_node = queue.dequeue()
+            print(c_node.key)
+            if c_node.has_left_child():
+                queue.enqueue(c_node.left)
+            if c_node.has_right_child():
+                queue.enqueue(c_node.right)
+
 
 
 if __name__ == "__main__":
@@ -102,9 +132,10 @@ if __name__ == "__main__":
     # bst.put(7)
     # bst.put(9)
     # bst.put(8)
-    l_max = bst.find_max(bst.root)
-    print(l_max)
-    l_min = bst.find_min(bst.root)
-    print(l_min)
-    h = bst.find_height(bst.root)
-    print(h)
+    # l_max = bst.find_max(bst.root)
+    # print(l_max)
+    # l_min = bst.find_min(bst.root)
+    # print(l_min)
+    # h = bst.find_height(bst.root)
+    # print(h)
+    bst.level_order_traversal()
