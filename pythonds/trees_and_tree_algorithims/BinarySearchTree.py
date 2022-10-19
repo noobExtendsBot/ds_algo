@@ -146,6 +146,7 @@ class BinarySearchTree:
 
     def __delitem__(self, key):
         self.delete(key)
+    
 
 if __name__ == "__main__":
     bst = BinarySearchTree()

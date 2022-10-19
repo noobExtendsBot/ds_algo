@@ -116,15 +116,49 @@ class BinarySearchTree:
                 queue.enqueue(c_node.left)
             if c_node.has_right_child():
                 queue.enqueue(c_node.right)
+    
+    def pre_order_traversal(self, c_node):
+        if c_node is None:
+            return 
+        print(c_node.key)
+        self.pre_order_traversal(c_node.left)
+        self.pre_order_traversal(c_node.right)
+    
+    def in_order_traversal(self, c_node):
+        if c_node is None:
+            return
+        self.in_order_traversal(c_node.left)
+        print(c_node.key)
+        self.in_order_traversal(c_node.right)
+    
+    def post_order_traversal(self, c_node):
+        if c_node is None:
+            return 
+        self.post_order_traversal(c_node.left)
+        self.post_order_traversal(c_node.right)
+        print(c_node.key)
+        
+
 
 
 
 if __name__ == "__main__":
     bst = BinarySearchTree()
-    bst.put(15)
-    bst.put(20)
-    bst.put(1)
-    bst.put(2)
+    bst.put('F')
+    bst.put('D')
+    bst.put('J')
+    bst.put('B')
+    bst.put('E')
+    bst.put('G')
+    bst.put('K')
+    bst.put('A')
+    bst.put('C')
+    bst.put('I')
+    bst.put('H')
+    # bst.put(15)
+    # bst.put(20)
+    # bst.put(1)
+    # bst.put(2)
     # bst.put(3)
     # bst.put(4)
     # bst.put(5)
@@ -139,3 +173,6 @@ if __name__ == "__main__":
     # h = bst.find_height(bst.root)
     # print(h)
     bst.level_order_traversal()
+    bst.pre_order_traversal(bst.root)
+    bst.in_order_traversal(bst.root)
+    bst.post_order_traversal(bst.root)
