@@ -25,6 +25,7 @@
 | [227. Basic Calculator II](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/227_basic_calculator_2.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Stacks | |
 | [347. Top K Frequent Elements](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/347_top_k_frequent_elements.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Hash Table | |
 | [75. Sort Colors](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/75_sort_colors.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Sorting | |
+| [102. Binary Tree Level Order Traversal](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/102_Binary_Tree_Level_Order_Traversal.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Sorting | |
 
 
 # [Pythonds](https://runestone.academy/ns/books/published/pythonds/index.html)
