@@ -17,6 +17,7 @@
 |[58. Length of Last Word](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/58_length_of_last_word.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Arrays | |
 |[104. Maximum Depth of Binary Tree](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/104_Maximum_Depth_of_Binary_Tree.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Binary Trees | |
 |[94. Binary Tree Inorder Traversal](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/94_Binary_Tree_Inorder_Traversal.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Binary Trees | |
+|[145. Binary Tree Postorder Traversal](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/145_Binary_Tree_Postorder_Traversal.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Binary Trees | |
 |[226. Invert Binary Tree](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/226_Invert_Binary_Tree.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Binary Trees | |
 |[150. Evaluate Reverse Polish Notation](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/150_evaluate_reverse_polish_notation.py)| ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
 | [155. Min Stack](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/155_min_stack.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
