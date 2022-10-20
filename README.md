@@ -26,6 +26,7 @@
 | [347. Top K Frequent Elements](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/347_top_k_frequent_elements.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Hash Table | |
 | [75. Sort Colors](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/75_sort_colors.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Sorting | |
 | [102. Binary Tree Level Order Traversal](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/102_Binary_Tree_Level_Order_Traversal.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Binary Trees | |
+| [98. Validate Binary Search Tree](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/98_Validate_Binary_Search_Tree.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Binary Trees (BST) | |
 
 
 # [Pythonds](https://runestone.academy/ns/books/published/pythonds/index.html)
