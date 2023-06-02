@@ -32,6 +32,7 @@
 | [102. Binary Tree Level Order Traversal](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/102_Binary_Tree_Level_Order_Traversal.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Binary Trees | |
 | [98. Validate Binary Search Tree](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/98_Validate_Binary_Search_Tree.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Binary Trees (BST) | |
 | [49. Group Anagrams](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/49_group_anagrams.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | HashMap | |
+| [128. Longest Consecutive Sequence](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/128_longest_consecutive_sequence.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Arrays | |
 
 
 # [Pythonds](https://runestone.academy/ns/books/published/pythonds/index.html)
