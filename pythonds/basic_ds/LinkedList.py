@@ -23,23 +23,37 @@ class LinkedList:
         self.head = None
 
     def add(self, data):
-        current = self.head
-        previous = None
-        found = False
-        while current is not None and not found:
-            if current.data > data:
-                found = True
-            else:
-                previous = current
-                current = current.next
+        # using double pointer
+        # current = self.head
+        # previous = None
+        # found = False
+        # while current is not None and not found:
+        #     if current.data > data:
+        #         found = True
+        #     else:
+        #         previous = current
+        #         current = current.next
 
-        new_node = Node(data)
-        if previous is not None:
-            previous.next = new_node
-            new_node.next = current
+        # new_node = Node(data)
+        # if previous is not None:
+        #     previous.next = new_node
+        #     new_node.next = current
+        # else:
+        #     new_node.next = self.head
+        #     self.head = new_node
+        
+        # using single pointer
+        node = Node(data)
+        if self.head is None or data < self.head.data:
+            node.next = self.head
+            self.head = node
         else:
-            new_node.next = self.head
-            self.head = new_node
+            current_node = self.head
+            while current_node.data > data and current_node is not None:
+                current_node = current_node.next
+            
+            node.next = current_node.next
+            current_node.next = node
 
     def search(self, data):
         current = self.head
