@@ -41,7 +41,7 @@ class LinkedList:
         # else:
         #     new_node.next = self.head
         #     self.head = new_node
-        
+
         # using single pointer
         node = Node(data)
         if self.head is None or data < self.head.data:
@@ -51,7 +51,7 @@ class LinkedList:
             current_node = self.head
             while current_node.data > data and current_node is not None:
                 current_node = current_node.next
-            
+
             node.next = current_node.next
             current_node.next = node
 

@@ -2,6 +2,7 @@
 Problem Link: https://leetcode.com/problems/binary-tree-inorder-traversal/description/
 """
 
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -16,7 +17,7 @@ class Solution:
         # <left> <root> <right>
         if c_node is None:
             return
-        
+
         self.inorder(c_node.left)
         self.res.append(c_node.val)
         self.inorder(c_node.right)

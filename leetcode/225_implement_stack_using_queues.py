@@ -1,4 +1,3 @@
-
 """
 Poblem Link: https://leetcode.com/problems/implement-stack-using-queues/
 """
@@ -19,7 +18,6 @@ class Queue:
 
 
 class MyStack:
-
     def __init__(self):
         self.queue1 = Queue()
         self.queue2 = Queue()

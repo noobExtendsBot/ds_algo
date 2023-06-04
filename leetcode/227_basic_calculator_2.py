@@ -5,10 +5,10 @@ Problem Link: https://leetcode.com/problems/basic-calculator-ii/
 
 class Solution:
     precedence_mapper = {
-        '+': 1,
-        '-': 1,
-        '*': 2,
-        '/': 2,
+        "+": 1,
+        "-": 1,
+        "*": 2,
+        "/": 2,
     }
 
     def calc(self, operand_1, operand_2, operator):
@@ -48,7 +48,8 @@ class Solution:
                 # add a space to mark end of item
                 output_stack.append(" ")
                 while len(operator_stack) > 0 and self.check_precedence(
-                        operator_stack[-1], i):
+                    operator_stack[-1], i
+                ):
                     output_stack.append(operator_stack.pop())
                     output_stack.append(" ")
                 operator_stack.append(i)

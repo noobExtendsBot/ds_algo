@@ -13,4 +13,4 @@ class Solution:
             return nums
         else:
             k %= l
-            nums[:] = nums[l - k:] + nums[:l - k]
+            nums[:] = nums[l - k :] + nums[: l - k]

@@ -6,7 +6,6 @@ Dequeue Time Complexity: O(1) at end of the list
 
 
 class Queue:
-
     def __init__(self):
         self.queue = list()
 

@@ -1,16 +1,16 @@
 class Queue:
     def __init__(self):
         self.queue = list()
-    
+
     def enqueue(self, data):
         self.queue.insert(0, data)
-    
+
     def dequeue(self):
         return self.queue.pop()
-    
+
     def is_empty(self):
         return len(self.queue) == 0
-    
+
 
 class TreeNode:
     def __init__(self, key, left=None, right=None, parent=None):
@@ -101,7 +101,7 @@ class BinarySearchTree:
         l_height = self.find_height(c_node.left)
         r_height = self.find_height(c_node.right)
         return max(l_height, r_height) + 1
-    
+
     def level_order_traversal(self):
         if self.root is None:
             return None
@@ -116,45 +116,42 @@ class BinarySearchTree:
                 queue.enqueue(c_node.left)
             if c_node.has_right_child():
                 queue.enqueue(c_node.right)
-    
+
     def pre_order_traversal(self, c_node):
         if c_node is None:
-            return 
+            return
         print(c_node.key)
         self.pre_order_traversal(c_node.left)
         self.pre_order_traversal(c_node.right)
-    
+
     def in_order_traversal(self, c_node):
         if c_node is None:
             return
         self.in_order_traversal(c_node.left)
         print(c_node.key)
         self.in_order_traversal(c_node.right)
-    
+
     def post_order_traversal(self, c_node):
         if c_node is None:
-            return 
+            return
         self.post_order_traversal(c_node.left)
         self.post_order_traversal(c_node.right)
         print(c_node.key)
-        
-
-
 
 
 if __name__ == "__main__":
     bst = BinarySearchTree()
-    bst.put('F')
-    bst.put('D')
-    bst.put('J')
-    bst.put('B')
-    bst.put('E')
-    bst.put('G')
-    bst.put('K')
-    bst.put('A')
-    bst.put('C')
-    bst.put('I')
-    bst.put('H')
+    bst.put("F")
+    bst.put("D")
+    bst.put("J")
+    bst.put("B")
+    bst.put("E")
+    bst.put("G")
+    bst.put("K")
+    bst.put("A")
+    bst.put("C")
+    bst.put("I")
+    bst.put("H")
     # bst.put(15)
     # bst.put(20)
     # bst.put(1)

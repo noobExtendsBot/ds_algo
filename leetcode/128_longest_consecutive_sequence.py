@@ -11,7 +11,7 @@ class Solution:
             return 0
         for i in range(len(nums)):
             l = 0
-            if (nums[i]-1) not in nums_set:
+            if (nums[i] - 1) not in nums_set:
                 c_start = nums[i]
                 while c_start in nums_set:
                     c_start += 1
@@ -19,5 +19,3 @@ class Solution:
             if l > mx:
                 mx = l
         return mx
-             
-        

@@ -4,7 +4,6 @@ Problem Link: https://leetcode.com/problems/implement-queue-using-stacks/
 
 
 class MyQueue:
-
     def __init__(self):
         self.stack1 = list()
         self.stack2 = list()

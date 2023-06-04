@@ -15,5 +15,4 @@ def solve_hot_potato(name_list: list, n: int) -> str:
 
 
 if __name__ == "__main__":
-    print(solve_hot_potato(
-        ["Bill", "David", "Susan", "Jane", "Kent", "Brad"], 7))
+    print(solve_hot_potato(["Bill", "David", "Susan", "Jane", "Kent", "Brad"], 7))

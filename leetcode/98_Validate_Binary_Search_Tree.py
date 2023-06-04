@@ -1,6 +1,8 @@
 """
 Problem Link: https://leetcode.com/problems/validate-binary-search-tree/description/
 """
+
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -21,8 +23,8 @@ class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         self.inorder_traversal(root)
         flag = True
-        for i in range(len(self.sorted)-1):
-            if self.sorted[i] >= self.sorted[i+1]:
+        for i in range(len(self.sorted) - 1):
+            if self.sorted[i] >= self.sorted[i + 1]:
                 flag = False
                 break
         return flag

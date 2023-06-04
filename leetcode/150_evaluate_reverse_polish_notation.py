@@ -5,11 +5,11 @@ Problem Link: https://leetcode.com/problems/evaluate-reverse-polish-notation/
 
 class Solution:
     def calculate(self, operand_1, operand_2, operator):
-        if operator == '+':
+        if operator == "+":
             return operand_1 + operand_2
-        elif operator == '-':
+        elif operator == "-":
             return operand_1 - operand_2
-        elif operator == '*':
+        elif operator == "*":
             return operand_1 * operand_2
         else:
             return int(operand_1 / operand_2)

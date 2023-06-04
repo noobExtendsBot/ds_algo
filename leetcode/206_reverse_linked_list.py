@@ -21,8 +21,7 @@ class Solution:
 
         return previous
 
-    def reverseListUsingRecursion(
-            self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def reverseListUsingRecursion(self, head: Optional[ListNode]) -> Optional[ListNode]:
         node = head
         if node is None:
             return node

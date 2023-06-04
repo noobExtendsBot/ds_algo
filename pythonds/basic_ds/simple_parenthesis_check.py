@@ -6,7 +6,7 @@ def check_parenthesis(symbols):
     balanced = True
     try:
         for item in symbols:
-            if item == '(':
+            if item == "(":
                 my_list.push(item)
             else:
                 my_list.pop()
@@ -20,7 +20,7 @@ def check_parenthesis(symbols):
 
 
 if __name__ == "__main__":
-    print(check_parenthesis('((()))'))
-    print(check_parenthesis('(()'))
-    print(check_parenthesis('))'))
-    print(check_parenthesis('(('))
+    print(check_parenthesis("((()))"))
+    print(check_parenthesis("(()"))
+    print(check_parenthesis("))"))
+    print(check_parenthesis("(("))

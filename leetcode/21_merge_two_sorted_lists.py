@@ -10,7 +10,6 @@ Problem Link: https://leetcode.com/problems/merge-two-sorted-lists/
 
 
 class LinkedList:
-
     def __init__(self):
         self.head = None
 
@@ -36,9 +35,8 @@ class Solution:
     """
 
     def mergeTwoLists(
-            self,
-            list1: Optional[ListNode],
-            list2: Optional[ListNode]) -> Optional[ListNode]:
+        self, list1: Optional[ListNode], list2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         llist = LinkedList()
 
         while list1 is not None and list2 is not None:

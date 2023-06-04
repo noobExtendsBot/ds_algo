@@ -5,10 +5,10 @@ Infix to Postfix conversion
 
 class MySolution:
     precedence_mapper = {
-        '+': 1,
-        '-': 1,
-        '*': 2,
-        '/': 2,
+        "+": 1,
+        "-": 1,
+        "*": 2,
+        "/": 2,
     }
 
     def has_greater_precedence(self, op1, op2):
@@ -26,14 +26,15 @@ class MySolution:
                 output.append(i)
             else:
                 while len(operator_stack) > 0 and self.has_greater_precedence(
-                        operator_stack[-1], i):
+                    operator_stack[-1], i
+                ):
                     output.append(operator_stack.pop())
                 operator_stack.append(i)
 
         while len(operator_stack) > 0:
             output.append(operator_stack.pop())
 
-        return ''.join(output)
+        return "".join(output)
         # print(''.join(output))
         # print(operator_stack)
 

@@ -3,12 +3,12 @@ class TreeNode:
         self.key = data
         self.left = None
         self.right = None
-    
+
 
 class BinarySearchTree:
     def __init__(self):
         self.root = None
-    
+
     def _insert(self, key, c_node):
         if key < c_node.key:
             if c_node.left:
@@ -54,8 +54,7 @@ class BinarySearchTree:
         left_subtree = self.height(c_node.left)
         right_subtree = self.height(c_node.right)
         return max(left_subtree, right_subtree) + 1
-    
-    
+
 
 if __name__ == "__main__":
     bst = BinarySearchTree()

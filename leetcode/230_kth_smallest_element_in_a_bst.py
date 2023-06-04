@@ -7,4 +7,4 @@
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         # level order traversal
-        pass 
+        pass

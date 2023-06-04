@@ -8,14 +8,14 @@ class Solution:
         slist = list()
         balanced = True
         closer_dict = {
-            '(': ')',
-            '[': ']',
-            '{': '}',
+            "(": ")",
+            "[": "]",
+            "{": "}",
         }
         # closers = ')]}'
         try:
             for index, value in enumerate(s):
-                if value in '{[(':
+                if value in "{[(":
                     slist.append(value)
                 else:
                     pop_val = slist.pop()
@@ -33,8 +33,8 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    print(sol.isValid('()'))
-    print(sol.isValid('{({([][])}())}'))
-    print(sol.isValid('[{()]'))
-    print(sol.isValid('[{('))
-    print(sol.isValid('}]'))
+    print(sol.isValid("()"))
+    print(sol.isValid("{({([][])}())}"))
+    print(sol.isValid("[{()]"))
+    print(sol.isValid("[{("))
+    print(sol.isValid("}]"))

@@ -6,12 +6,12 @@ Problem Link: https://leetcode.com/problems/find-first-and-last-position-of-elem
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         """
-            nums = [5,7,7,8,8,10], target = 8 => [3,4]
-            if empty [-1,-1]
-            if only one [5,7,7,8,10], target = 8 => [3,3]
+        nums = [5,7,7,8,8,10], target = 8 => [3,4]
+        if empty [-1,-1]
+        if only one [5,7,7,8,10], target = 8 => [3,3]
 
-            METHOD 1: linear search
-            METHOD 2: Binary Search
+        METHOD 1: linear search
+        METHOD 2: Binary Search
         """
 
         # Brute force (a bad question maybe? accepts it)

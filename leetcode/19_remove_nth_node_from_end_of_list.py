@@ -12,12 +12,9 @@ class Solution:
             current = current.next
         return size
 
-    def removeNthFromEnd(
-            self,
-            head: Optional[ListNode],
-            n: int) -> Optional[ListNode]:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         size = self.get_size(head)
-        element_num = (size - n + 1)
+        element_num = size - n + 1
         previous = None
         current = head
         count = 0

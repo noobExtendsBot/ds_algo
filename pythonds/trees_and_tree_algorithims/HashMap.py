@@ -8,13 +8,13 @@ class TreeNode:
         self.left = left
         self.right = right
         self.parent = parent
-    
+
     def has_left_child(self):
         return self.left
-    
+
     def has_right_child(self):
         return self.right
-    
+
     def is_left_child(self):
         return self.parent and self.parent.left == self
 
@@ -28,10 +28,10 @@ class TreeNode:
         return not (self.left or self.right)
 
     def has_any_children(self):
-        return (self.left or self.right)
+        return self.left or self.right
 
     def has_both_children(self):
-        return (self.left and self.right)
+        return self.left and self.right
 
     def replace_node_data(self, key, value, lc, rc):
         self.key = key
@@ -43,20 +43,21 @@ class TreeNode:
         if self.has_right_child():
             self.right.parent = self
 
+
 class BinarySearchTree:
     def __init__(self):
         self.root = None
         self.size = 0
-    
+
     def length(self):
         return self.size
-    
+
     def __len__(self):
         return self.size
-    
+
     def __iter__(self):
         return self.root.__iter__()
-    
+
     def put(self, key, val):
         if self.root:
             self._put(key, val, self.root)
@@ -65,7 +66,7 @@ class BinarySearchTree:
         self.size += 1
 
     def _put(self, key, val, c_node):
-        if key < c_node.key: 
+        if key < c_node.key:
             if c_node.has_left_child():
                 self._put(key, val, c_node.left)
             else:
@@ -75,10 +76,10 @@ class BinarySearchTree:
                 self._put(key, val, c_node.right)
             else:
                 c_node.right = TreeNode(key, val, parent=c_node)
-    
+
     def __setitem__(self, k, v):
         self.put(k, v)
-     
+
     def get(self, key):
         if self.root.key == key:
             return self.root.val
@@ -88,7 +89,7 @@ class BinarySearchTree:
                 return res.val
             else:
                 return None
-    
+
     def _get(self, key, c_node):
         if c_node is None:
             return None
@@ -98,16 +99,16 @@ class BinarySearchTree:
             return self._get(key, c_node.left)
         else:
             return self._get(key, c_node.right)
-    
+
     def __getitem__(self, key):
         return self.get(key)
-    
+
     def __contains__(self, key):
         if self._get(key, self.root):
             return True
         else:
             return False
-    
+
     def delete(self, key):
         if self.size > 1:
             node_to_remove = self._get(key, self.root)
@@ -121,7 +122,7 @@ class BinarySearchTree:
             self.size -= 1
         else:
             raise KeyError("Error, key not in the tree")
-    
+
     def find_min(self, c_node):
         if c_node is None:
             return
@@ -142,7 +143,7 @@ class BinarySearchTree:
             self.remove(temp_node)
             c_node.key = key
             c_node.val = val
-        else: # only one chlid
+        else:  # only one chlid
             if c_node.is_left_child():
                 if c_node.has_left_child():
                     c_node.left.parent = c_node.parent
@@ -157,18 +158,18 @@ class BinarySearchTree:
                 elif c_node.has_right_child():
                     c_node.right.parent = c_node.parent
                     c_node.parent.right = c_node.right
-        
+
     def in_order_traversal(self, c_node):
         if c_node is None:
             return
-        
+
         self.in_order_traversal(c_node.left)
         print(c_node.key)
         self.in_order_traversal(c_node.right)
 
     def __delitem__(self, key):
         self.delete(key)
-    
+
 
 if __name__ == "__main__":
     bst = BinarySearchTree()

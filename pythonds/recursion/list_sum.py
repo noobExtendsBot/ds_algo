@@ -4,6 +4,7 @@
 3. Recursive call
 """
 
+
 class ListSum:
     # [1,2,3,4,5]
     def solve(self, nList):
@@ -12,6 +13,7 @@ class ListSum:
         else:
             return nList[0] + self.solve(nList[1:])
 
+
 if __name__ == "__main__":
     sum = ListSum()
-    print(sum.solve([2,3,4,5]))
+    print(sum.solve([2, 3, 4, 5]))
