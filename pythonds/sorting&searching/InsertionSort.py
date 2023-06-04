@@ -8,7 +8,7 @@ So, compare new element with each element of the left side of the list and inser
 
 def insertion_sort():
 	arr = [89,12,43,12,0,1]
-	for i, v in enumerate(arr):
+	for i, _ in enumerate(arr):
 		j = i
 		while j > 0 and arr[j-1] > arr[j]:
 			arr[j-1], arr[j] = arr[j], arr[j-1]
