@@ -34,6 +34,7 @@
 | [98. Validate Binary Search Tree](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/98_Validate_Binary_Search_Tree.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Binary Trees (BST) | |
 | [49. Group Anagrams](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/49_group_anagrams.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | HashMap | |
 | [128. Longest Consecutive Sequence](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/128_longest_consecutive_sequence.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Arrays | |
+| [167. Two Sum II - Input Array Is Sorted](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/167_two_sum_II.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Arrays | Two Pointers |
 
 
 # [Pythonds](https://runestone.academy/ns/books/published/pythonds/index.html)
