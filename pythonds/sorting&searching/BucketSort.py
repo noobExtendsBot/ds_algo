@@ -7,6 +7,7 @@ And concat them
 A more generalized version of this would be:
 range = (max - min) / k
 BucketIndex = ( arr[i] - min) / range
+Time Complexity: O(n+k) n = number of elements and k = number of buckets
 """
 
 
