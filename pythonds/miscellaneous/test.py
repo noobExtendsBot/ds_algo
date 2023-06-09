@@ -1,16 +1,18 @@
 import pdb
 
-def removeDuplicates(nums):
-    if len(nums) == 0: return
-    prev = 0
-    nxt = prev + 1
+from collections import deque
+
+
+def isPalindrome(s):
+    s = [x.lower() for x in s if x.isalpha()]
+    dq = deque(s)
+    print(dq)
     # pdb.set_trace()
-    while prev < nxt and nxt < (len(nums)):
-        if nums[nxt] == nums[prev]:
-            nums[prev] = None
-        prev += 1
-        nxt += 1
-    return nums
+    while len(dq)>1:
+        if dq.popleft() != dq.pop():
+            return False
+    return True
+        
 
 if __name__=="__main__":
-    print(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
+    print(isPalindrome("0P"))
