@@ -21,6 +21,7 @@
 |[145. Binary Tree Postorder Traversal](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/145_Binary_Tree_Postorder_Traversal.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Binary Trees | |
 |[226. Invert Binary Tree](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/226_Invert_Binary_Tree.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Binary Trees | |
 |[680. Valid Palindrome II](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/680_valid_palindrom_II.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Deque or Array | Two Pointers |
+|[26. Remove Duplicates from Sorted Array](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/26_remove_duplicates_from_sorted_array.py)| ![Easy](https://img.shields.io/badge/-Easy-green) | Array | Two Pointers |
 |[150. Evaluate Reverse Polish Notation](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/150_evaluate_reverse_polish_notation.py)| ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
 | [155. Min Stack](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/155_min_stack.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Stack | |
 | [19. Remove Nth Node From End of List](https://github.com/noobExtendsBot/ds_algo/blob/master/leetcode/19_remove_nth_node_from_end_of_list.py) | ![Medium](https://img.shields.io/badge/-Medium-orange) | Linked List | Two Pointers|
