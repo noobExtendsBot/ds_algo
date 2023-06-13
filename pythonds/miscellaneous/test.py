@@ -3,36 +3,27 @@ import pdb
 from collections import deque
 
 
-def three_sum(nums):
-    nums = sorted(nums)
-    t = 0
-    res = list()
-    # pdb.set_trace()
-    for i, v in enumerate(nums):
-        # pdb.set_trace()
-        if i > 0 and v == nums[i-1]:
-            continue
 
-        l, r = i+1, (len(nums) - 1)
-        rem = t - v
-        while l < r:
-            c_sum = nums[l] + nums[r]
-            if c_sum > rem:
-                r -= 1
-            elif c_sum < rem:
-                l += 1
-            elif c_sum == rem:
-                # pdb.set_trace()
-                res.append([nums[i], nums[l], nums[r]])
-                l += 1
-                r -= 1
-                # what's the point of this?????
-                while nums[l] == nums[l-1] and l<r:
-                    # print(nums[l], nums[l-1])
-                    l += 1
+def maxArea(height):
+    if len(height) == 2: return height[0]*height[1]
 
-    return res
+    mx = 0
+    first = 0
+    next = 1
+
+    while next < len(height) and first < len(height):
+        l = max(next, first) - min(next, first)
+        h = min(height[first], height[next])
+        A = l*h
+        if A > mx: mx = A
+        if height[first] < height[next]: first += 1
+        else: next += 1
+    
+    return mx
+
         
 
 if __name__=="__main__":
-    print(three_sum([0,0,0]))
+    print(maxArea([1, 5, 4, 3]))
+    print(maxArea([3, 1, 2, 4, 5]))
+    print(maxArea([5,5,5,5,5,5]))
