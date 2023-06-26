@@ -4,26 +4,27 @@ from collections import deque
 
 
 
-def maxArea(height):
-    if len(height) == 2: return height[0]*height[1]
+def maxProfit(prices):
+    if len(prices) < 2:
+            return 0
+        
+    f, n, m_profit = 0, 1, 0
+    pdb.set_trace()
+    while f < n and n < len(prices):
+        c_profit = 0
+        if prices[n] < prices[f]:
+            f = n 
+        else:
+            c_profit = prices[n] - prices[f]
+        n += 1
 
-    mx = 0
-    first = 0
-    next = 1
-
-    while next < len(height) and first < len(height):
-        l = max(next, first) - min(next, first)
-        h = min(height[first], height[next])
-        A = l*h
-        if A > mx: mx = A
-        if height[first] < height[next]: first += 1
-        else: next += 1
-    
-    return mx
+        if c_profit > m_profit:
+            m_profit = c_profit
+    return m_profit
 
         
 
 if __name__=="__main__":
-    print(maxArea([1, 5, 4, 3]))
-    print(maxArea([3, 1, 2, 4, 5]))
-    print(maxArea([5,5,5,5,5,5]))
+    print(maxProfit([1, 2]))
+    # print(maxProfit([3, 1, 2, 4, 5]))
+    # print(maxProfit([5,5,5,5,5,5]))
